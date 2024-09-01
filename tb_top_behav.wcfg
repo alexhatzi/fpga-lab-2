@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="100.000000001 ms"></ZoomEndTime>
+      <Cursor1Time time="28.141592920 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject type="logic" fp_name="/tb_top/UUT/u_display_driver/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/r_color">
+      <obj_property name="ElementShortName">r_color[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_color[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/g_color">
+      <obj_property name="ElementShortName">g_color[2:0]</obj_property>
+      <obj_property name="ObjectShortName">g_color[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/b_color">
+      <obj_property name="ElementShortName">b_color[2:0]</obj_property>
+      <obj_property name="ObjectShortName">b_color[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/red">
+      <obj_property name="ElementShortName">red[2:0]</obj_property>
+      <obj_property name="ObjectShortName">red[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/green">
+      <obj_property name="ElementShortName">green[2:0]</obj_property>
+      <obj_property name="ObjectShortName">green[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/blue">
+      <obj_property name="ElementShortName">blue[2:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/u_display_driver/H_SYNC">
+      <obj_property name="ElementShortName">H_SYNC</obj_property>
+      <obj_property name="ObjectShortName">H_SYNC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/u_display_driver/V_SYNC">
+      <obj_property name="ElementShortName">V_SYNC</obj_property>
+      <obj_property name="ObjectShortName">V_SYNC</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/HSYNC_STATE">
+      <obj_property name="ElementShortName">HSYNC_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HSYNC_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/VSYNC_STATE">
+      <obj_property name="ElementShortName">VSYNC_STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">VSYNC_STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/h_counter">
+      <obj_property name="ElementShortName">h_counter[20:0]</obj_property>
+      <obj_property name="ObjectShortName">h_counter[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/v_counter">
+      <obj_property name="ElementShortName">v_counter[20:0]</obj_property>
+      <obj_property name="ObjectShortName">v_counter[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/c_cnt">
+      <obj_property name="ElementShortName">c_cnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">c_cnt[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/d_cnt">
+      <obj_property name="ElementShortName">d_cnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">d_cnt[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/e_cnt">
+      <obj_property name="ElementShortName">e_cnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">e_cnt[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/PIXELS_PER_ROW">
+      <obj_property name="ElementShortName">PIXELS_PER_ROW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIXELS_PER_ROW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/PIXELS_PER_COLUMN">
+      <obj_property name="ElementShortName">PIXELS_PER_COLUMN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIXELS_PER_COLUMN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/A_CLKS">
+      <obj_property name="ElementShortName">A_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/B_CLKS">
+      <obj_property name="ElementShortName">B_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/C_CLKS">
+      <obj_property name="ElementShortName">C_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/D_CLKS">
+      <obj_property name="ElementShortName">D_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/E_CLKS">
+      <obj_property name="ElementShortName">E_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">E_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/O_CLKS">
+      <obj_property name="ElementShortName">O_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">O_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/P_CLKS">
+      <obj_property name="ElementShortName">P_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/Q_CLKS">
+      <obj_property name="ElementShortName">Q_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/R_CLKS">
+      <obj_property name="ElementShortName">R_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R_CLKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/u_display_driver/S_CLKS">
+      <obj_property name="ElementShortName">S_CLKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_CLKS[31:0]</obj_property>
+   </wvobject>
+</wave_config>
