@@ -62,6 +62,7 @@ module display_driver
 
     // HSYNC state machine 
     always@(posedge clk) begin
+      if(V_SYNC) begin
       case (HSYNC_STATE)
             HIDLE:  begin
                        h_counter   <= '0    ; 
@@ -87,6 +88,11 @@ module display_driver
                     end
           default: HSYNC_STATE <= HIDLE ; 
      endcase
+     end else begin
+      H_SYNC      <= '0    ; 
+      h_counter   <= '0    ; 
+      HSYNC_STATE <= HWAIT ; 
+     end
     end
 
 
@@ -137,6 +143,7 @@ module display_driver
 
     // RGB Driver
     always@(posedge clk) begin
+      if(V_SYNC) begin
         if(H_SYNC) begin  // When HSYNC high
           if (c_cnt == (C_CLKS-1)) begin // Wait for hold time
             if (d_cnt == (D_CLKS-1)) begin // Drive RGB values in active region
@@ -164,7 +171,7 @@ module display_driver
         e_cnt   <= '0 ; 
         end
     end
-
+  end
 
 
 
