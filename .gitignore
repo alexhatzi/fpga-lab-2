@@ -1,0 +1,8 @@
+*.jou
+*.log
+project_1.cache/
+project_1.runs/
+project_1.xpr
+project_1.sim/
+.sv_cache/
+*.str
