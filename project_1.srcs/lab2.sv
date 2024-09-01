@@ -93,9 +93,9 @@ display_driver u_display_driver
     always@(posedge clk) begin
         case (btn_cnt[0]) 
             4'b0000 : begin        // Black
-                r_color <= 4'b1111 ; 
-                g_color <= 4'b1111 ; 
-                b_color <= 4'b1111 ; 
+                r_color <= 4'b0000 ; 
+                g_color <= 4'b0000 ; 
+                b_color <= 4'b0000 ; 
             end
             4'b0001 : begin      // White
                 r_color <= 4'b1111 ; 
@@ -133,14 +133,14 @@ display_driver u_display_driver
                 b_color <= 4'b1111 ; 
             end
             4'b1000 : begin         // idk
-                r_color <= 4'b0000 ; 
-                g_color <= 4'b0000 ; 
-                b_color <= 4'b0000 ; 
+                r_color <= 4'b0011 ; 
+                g_color <= 4'b0111 ; 
+                b_color <= 4'b1111 ; 
             end
             default : begin         // Black ? 
-                r_color <= 4'b0000 ; 
-                g_color <= 4'b0000 ; 
-                b_color <= 4'b0000 ; 
+                r_color <= 4'b0011 ; 
+                g_color <= 4'b0111 ; 
+                b_color <= 4'b1111 ; 
             end
             
             
