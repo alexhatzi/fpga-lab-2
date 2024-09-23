@@ -168,7 +168,4 @@ display_driver u_display_driver
    debugDISP_LED = ~debugDISP_LED ; 
 
 
-
-
-
 endmodule 

@@ -35,12 +35,12 @@ module display_driver
      , parameter S_CLKS            = 35000
      )
      ( input              clk
-     , input  logic [2:0] r_color
-     , input  logic [2:0] g_color 
-     , input  logic [2:0] b_color
-     , output logic [2:0] red
-     , output logic [2:0] green
-     , output logic [2:0] blue
+     , input  logic [3:0] r_color
+     , input  logic [3:0] g_color 
+     , input  logic [3:0] b_color
+     , output logic [3:0] red
+     , output logic [3:0] green
+     , output logic [3:0] blue
      , output logic       H_SYNC
      , output logic       V_SYNC
      );
@@ -148,17 +148,17 @@ module display_driver
           if (c_cnt == (C_CLKS-1)) begin // Wait for hold time
             if (d_cnt == (D_CLKS-1)) begin // Drive RGB values in active region
                 if (e_cnt == (E_CLKS-1)) begin // Stop after D time
-                    red    [2:0] <= '0 ;
-                    green  [2:0] <= '0 ; 
-                    blue   [2:0] <= '0 ; 
+                    red    [3:0] <= '0 ;
+                    green  [3:0] <= '0 ; 
+                    blue   [3:0] <= '0 ; 
                 end 
                 else e_cnt <= e_cnt + 1'b1 ; 
             end
             else begin
             d_cnt     <= d_cnt + 1'b1   ; 
-            red   [2:0] <= r_color [2:0]    ; 
-            green [2:0] <= g_color [2:0]    ; 
-            blue  [2:0] <= b_color [2:0]    ; 
+            red   [3:0] <= r_color [3:0]    ; 
+            green [3:0] <= g_color [3:0]    ; 
+            blue  [3:0] <= b_color [3:0]    ; 
             end
           end 
           else begin
